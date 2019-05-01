@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+<div class="p-3 mb-2 bg-light text-dark">
+<div align="center">
+    {% if result==['N'] %}
+        <h1><p class="text-center"> Your chance of having cancer is pretty low</p></h1>
+        <div class="text-center">
+    <img class="img-responsive" src="{{ url_for('static',filename='image/s1.jpg')}}">
+        </div>
+    {% endif %}
+
+    {% if result==['Y'] %}
+        <h1><p class="text-center"> Your chance of having cancer is pretty high </p></h1>
+                <h2><p class="text-center"> contact doctor as soon as possible </p></h2>
+
+         <div class="text-center">
+    <img class="img-responsive" src="{{ url_for('static',filename='image/su.jpg')}}">
+        </div>
+    {% endif %}
+</div>
+</div>
+</body>
+</html>

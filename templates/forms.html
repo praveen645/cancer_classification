@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PREDICT</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/b4.css') }}">
+
+
+  </head>
+  <body >
+
+  <div class="jumbotron-fluid" align="center">
+
+    <form action="{{url_for('result')}}"  method="post" align="center" >
+
+        <br><i><h2>Enter all your details</h2></i><br><hr>
+
+        <div class="rows" >
+
+        <div class="col-md-6 float-md-left">
+
+            <div class="form-group">
+        <h5>AGE </h5> <input type= "number" name="AGE" placeholder="enter the age" style="background-color:transparent;">
+        </div>
+            <div class="form-group">
+                <h5>NUMBER OF PREGNANCIES</h5><input type= "number" name="NUMBER OF PREGNANCIES" style="background-color:transparent;">
+            </div>
+
+       <div class="form-group">
+            <h5>GENITAL HERPES</h5><input type= "number" name="GENITAL HERPES" style="background-color:transparent;" >
+       </div>
+<div class="form-group">
+    <h5>AIDS</h5><input type= "number" name="AIDS" style="background-color:transparent;">
+</div>
+
+      <div class="form-group">
+          <h5>HIV</h5><input type= "number" name="HIV" style="background-color:transparent;">
+      </div></div>
+            <div class="col-md-6 float-md-right">
+       <div class="form-group">
+           <h5>HEPATITIS B</h5> <input type= "number" name="HEPATITIS B" style="background-color:transparent;">
+       </div>
+
+       <div class="form-group">
+           <h5>HINSELMANN TEST REPORT</h5><input type= "number" name="HINSELMANN TEST REPORT" style="background-color:transparent;">
+       </div>
+
+       <div class="form-group">
+           <h5>SCHILLER TEST REPORT</h5><input type= "number" name="SCHILLER TEST" style="background-color:transparent;">
+       </div>
+
+       <div class="form-group">
+           <h5>CITOLOGY TEST REPORT</h5><input type= "number" name="CITOLOGY TEST" style="background-color:transparent;">
+       </div>
+            </div>
+            </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+<div class="text-center">
+            <button type="submit" class=" btn btn-outline-success form-group">Submit</button>
+</div>
+
+
+    </form>
+       </div>
+  </body>
+</html>
